@@ -16,7 +16,7 @@ elsif d == 0
   puts "D = 0, Один корень X = #{x}"
 else 
   root = Math.sqrt(d) 
-  x1 = (-b + root) / (2 * a)
-  x2 = (-b - root) / (2 * a)
+  x1 = (-b + root) / (2.0 * a)
+  x2 = (-b - root) / (2.0 * a)
   puts "D = #{d}, имеем два корня: X1 = #{x1}, X2 = #{x2}"
 end
