@@ -4,5 +4,5 @@ vowels_hash = {}
 
 alphabet.each_with_index do |value, index|
   vowels_hash[value] = index + 1 if vowels.include?(value)
-end
+end 
 puts vowels_hash
