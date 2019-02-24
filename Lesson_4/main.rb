@@ -56,7 +56,7 @@ private
   def create_train
     puts ENTER_TYPE_MENU_TRAIN
     train_type =
-      case gets.to_i
+      case gets.chomp
       when 1 then PassangerTrain
       when 2 then CargoTrain
       end
