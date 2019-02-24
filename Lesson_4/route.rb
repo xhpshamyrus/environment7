@@ -12,4 +12,8 @@ class Route
   def del_station(station)
     @stations.delete(station)
   end
+  
+  def to_s
+    [stations.first.name, stations.first.name].join(' - ')
+  end
 end
