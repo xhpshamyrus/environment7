@@ -11,6 +11,7 @@ require_relative 'const.rb'
 class Main
 include MenuConstants
   def initialize
+private
     @stations = []
     @trains = []
     @routes = []
