@@ -193,7 +193,7 @@ include MenuConstants
   end
 
   def list_routes
-    @routes.each_with_index { |route, index| puts "#{index + 1} #{route}" }
+    @routes.each_with_index { |route, index| puts "#{index + 1} #{route.to_s}" }
   end
 
   def trains_on_station
