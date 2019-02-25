@@ -11,7 +11,6 @@ require_relative 'const.rb'
 class Main
 include MenuConstants
   def initialize
-private
     @stations = []
     @trains = []
     @routes = []
@@ -25,6 +24,8 @@ private
       choice(num.to_i)
     end
   end
+  
+  private
 
   def choice(num)
     case num
