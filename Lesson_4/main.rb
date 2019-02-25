@@ -57,7 +57,7 @@ include MenuConstants
   def create_train
     puts ENTER_TYPE_MENU_TRAIN
     train_type =
-      case gets.chomp
+      case gets.to_i
       when 1 then PassangerTrain
       when 2 then CargoTrain
       end
