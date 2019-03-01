@@ -6,7 +6,7 @@ module InstanceCounter
 
   module InstanceMethods
 
-  private
+    private
 
     def register_instance
       self.class.instances  += 1
