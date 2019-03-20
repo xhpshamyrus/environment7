@@ -75,8 +75,6 @@ class Train
 
   protected # Методы вызываются внутри класса через методы родственных объектов.
 
-  attr_accessor :current_station
-
   def validate!
     raise INCORRECT_NUMBER if @number !~ NUMBER_FORMAT
   end
