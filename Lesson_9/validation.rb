@@ -17,10 +17,8 @@ module Validation
 
   module InstanceMethods
     INCORRECT_VOLUME = 'Количество мест/объем не должно превышать 99!'.freeze
-    #NOT_EMPTY_VALUE = 'Значение не может быть пустым!'.freeze
     INCORRECT_FORMAT = 'Неверный формат ввода!'.freeze
     INCORRECT_TYPE = 'Неверный тип!'.freeze
-    #MAX_VOLUME = 99
 
     def valid?
       validate!
