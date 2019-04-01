@@ -27,7 +27,7 @@ module Accessors
 
     define_method(name) { instance_variable_get(variable) }
 
-    define_method("@#{name}".to_sym) do |value|
+    define_method("@#{name}=".to_sym) do |value|
       raise ("Неверный тип #{name}. Необходим: #{type}") unless value.is_a?(type)
       instance_variable_set(variable, value)
     end
