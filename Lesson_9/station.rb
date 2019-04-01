@@ -18,8 +18,8 @@ class Station
 
   attr_accessor_with_history :trains, :name
 
-  validate :name, :validate_presence
-  validate :name, :validate_format, STATION_NAME
+  validate :name, :presence
+  validate :name, :format, STATION_NAME
 
   def initialize(name)
     @name = name
