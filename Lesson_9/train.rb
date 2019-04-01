@@ -20,8 +20,8 @@ class Train
 
   attr_accessor_with_history :type, :number, :route, :speed, :wagons
 
-  validate :number, :validate_presence
-  validate :number, :validate_format, NUMBER_FORMAT
+  validate :number, :presence
+  validate :number, :format, NUMBER_FORMAT
 
   def initialize(number)
     @number = number
