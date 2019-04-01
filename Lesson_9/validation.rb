@@ -16,7 +16,6 @@ module Validation
   end
 
   module InstanceMethods
-    INCORRECT_VOLUME = 'Количество мест/объем не должно превышать 99!'.freeze
     INCORRECT_FORMAT = 'Неверный формат ввода!'.freeze
     INCORRECT_TYPE = 'Неверный тип!'.freeze
 
