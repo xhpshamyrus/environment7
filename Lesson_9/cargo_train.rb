@@ -4,7 +4,7 @@ class CargoTrain < Train
   validate :number, :format, NUMBER_FORMAT
 
   def initialize(number)
-    super(number)
+    super(number) 
     @type = :cargo
   end
 end
