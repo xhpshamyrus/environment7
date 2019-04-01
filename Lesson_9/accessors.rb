@@ -8,7 +8,7 @@ module Accessors
 
     define_method(name) { instance_variable_get(variable) }
 
-    define_method("@#{name}".to_sym) do |value|
+    define_method("@#{name}=".to_sym) do |value|
       previous_value = instance_variable_get(variable) # get current value
       instance_variable_set(variable, value) # set new value
       if instance_variable_get(variable_history)
